@@ -14,7 +14,7 @@ MongoClient.connect(`mongodb://localhost:27017/${dbname}`, { useNewUrlParser: tr
 
 	db.collection('Users').deleteOne({Name : 'Mridul'}).then((result) => {
 
-		console.log(JSON.stringify(result.ops, undefined , 2));
+		console.log(result);
 	})
 	
 	// client.close();
