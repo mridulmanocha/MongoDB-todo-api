@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var {ObjectID} = require('mongodb');
 
-
+var {mongoose} = require('./db/mongoose.js');
 var {todo} = require('./models/todo.js');
 var {user} = require('./models/users.js');
 
